@@ -1,3 +1,5 @@
+import Header from "./header/Header"
+
 interface AppLayoutProps {
     children: React.ReactNode
 }
@@ -5,6 +7,7 @@ interface AppLayoutProps {
 export default function AppLayout({ children }: AppLayoutProps) {
     return (
         <>
+            <Header />
             <main>
                 {children}
             </main>
