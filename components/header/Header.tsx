@@ -3,11 +3,7 @@ import MenuButton from "./MenuButton";
 import NotificationsButton from "./NotificationsButton";
 import ProfileButton from "./ProfileButton";
 
-interface HeaderProps {
-
-}
-
-export default function Header({ }: HeaderProps) {
+export default function Header() {
 
     return (
         <header className="relative border-b-2 p-6 md:p-7 grid grid-cols-2 md:grid-cols-1 items-center bg-[#F5EBDD]">
