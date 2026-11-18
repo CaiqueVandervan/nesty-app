@@ -1,0 +1,11 @@
+import { IconProps } from "@/types/icon";
+
+export default function ArrowLeftIcon({ className }: IconProps) {
+
+    return (
+        <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16" className={className} aria-hidden="true">
+            <path d="M0 0h16v16H0z" fill="none" />
+            <path fill="currentColor" d="M4.293 1.293a1 1 0 1 1 1.414 1.414L4.414 4H8a7 7 0 0 1 7 7v2a1 1 0 0 1-2 0v-2a5 5 0 0 0-5-5H4.414l1.293 1.293a1 1 0 0 1-1.414 1.414l-3-3a1 1 0 0 1 0-1.414z" />
+        </svg>
+    )
+}
