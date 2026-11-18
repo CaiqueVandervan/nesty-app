@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { MuseoModerno } from "next/font/google";
 import "./globals.css";
-import AppLayout from "@/components/AppLayout";
 
 const museoModerno = MuseoModerno({
   variable: "--font-museo-moderno",
@@ -19,12 +18,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="pt-BR"
       className={`${museoModerno.variable} h-full antialiased`}
     >
-      <body className="min-h-screen flex flex-col md:p-4">
-        <div className="flex flex-1 md:rounded-lg overflow-hidden bg-[#FBF8F2]">
-          <AppLayout>
-            {children}
-          </AppLayout>
-        </div>
+      <body className="min-h-screen flex flex-col">
+        {children}
       </body>
     </html>
   );
