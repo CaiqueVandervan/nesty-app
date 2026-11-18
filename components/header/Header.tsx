@@ -12,7 +12,7 @@ export default function Header() {
             </div>
 
             <div className="absolute justify-self-center">
-                <Logo className="size-35 md:size-42" />
+                <Logo className="size-21 md:size-22" />
             </div>
 
             <div className="flex items-center gap-3 justify-self-end">
