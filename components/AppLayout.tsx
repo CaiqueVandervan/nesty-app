@@ -15,7 +15,7 @@ export default function AppLayout({ children }: AppLayoutProps) {
 
             <div className="flex flex-col flex-1">
                 <Header />
-                <main className="flex flex-1">
+                <main className="flex flex-col overflow-y-auto flex-1">
                     {children}
                 </main>
             </div>
