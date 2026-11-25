@@ -10,7 +10,7 @@ interface NavigationItemProps {
 
 export default function NavigationItem({ showed, icon, label, href, pathName }: NavigationItemProps) {
     return (
-        <Link className={`flex w-full items-center px-3 py-3 cursor-pointer ${pathName === href ? "bg-green-900" : "hover:bg-green-900/70"} `}
+        <Link className={`flex w-full items-center px-3 py-3 cursor-pointer ${pathName === href ? "bg-[#395E52]" : "hover:bg-[#395E52]/70"} `}
             href={href}>
             <span className="flex w-11 shrink-0 justify-center">
                 {icon}
