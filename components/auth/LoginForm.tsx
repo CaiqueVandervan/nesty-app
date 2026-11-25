@@ -8,14 +8,18 @@ import PasswordIcon from "../icons/PasswordIcon"
 import EnterIcon from "../icons/EnterIcon"
 import SpinnerIcon from "../icons/SpinnerIcon"
 import GoogleIcon from "../icons/GoogleIcon"
+import { useRouter } from "next/navigation"
 
 export default function LoginForm() {
+
+    const router = useRouter()
 
     const { register, handleSubmit, formState: { errors, isSubmitting } } = useForm<LoginFormSchema>({ resolver: zodResolver(loginFormSchema) })
 
     async function onSubmit(data: LoginFormSchema) {
         await new Promise((r) => setTimeout(r, 2000))
         console.log(data)
+        router.replace("/")
     }
 
     return (
